@@ -80,7 +80,7 @@ class App extends React.Component {
     return (
       <div className= "app">
         <div className= "header">
-          <h2>My Todo List:</h2>
+          <h2>My To-do List:</h2>
           <h4>"Where Getting Things Done Always Sparks Joy"</h4> 
         </div>
         <div className="main">

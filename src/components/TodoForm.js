@@ -2,23 +2,28 @@ import React from "react";
 
 import styled from 'styled-components';
 
+const Form = styled.form`
+    margin-bottom: 5px;
+`
+
 const Button = styled.button`
     background-color: #9d03fc;
-    border: 1px solid #55008a;
+    border: 2px solid #55008a;
     color: white;
     font-size: 16px;
     padding: 6px 14px;
-
+    cursor: pointer;
     margin-top: 16px;
 `
 
 const Input = styled.input`
     background: transparent;
     border: none;
-    border-bottom: 1px solid #55008a;
+    border-bottom: 2px solid #55008a;
     padding-bottom: 6px;
     padding-top: 6px;
     margin-right: 5px;
+    width: 190px;
     ::placeholder,
     ::-webkit-input-placeholder {
       color: white;
@@ -53,16 +58,16 @@ class TodoForm extends React.Component {
     render() {
         console.log("Rendering Form");
         return (
-            <form onSubmit={this.handleSubmit}>
+            <Form onSubmit={this.handleSubmit}>
                 <Input 
                     onChange={this.handleChanges}
                     type="text"
                     name="item"
-                    placeholder="Add Task"
+                    placeholder="Create New Task"
                     value={this.state.newItem}
                 />
                 <Button>Add</Button>
-            </form>
+            </Form>
         );
     }
 }

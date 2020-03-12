@@ -30,15 +30,37 @@ body {
     margin-right: 20%;
 }
 
+.todo-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+
 .task {
     background-color: #9d03fc;
-    width: 170px;
+    border: 2px solid #55008a;
+    width: 20%;
+    margin: 8px 0;
+    padding: 6px;
     text-align: left;
-    margin: 4px 0;
     cursor: pointer;
   }
   
-  .item.completed {
-    background-color: #b33aff;
+  .task.completed {
+    background-color: #51abff;
+    border: 2px solid #55008a;
     text-decoration: line-through;
+  }
+
+  form > Input {
+    background-color: #063131;
+    border: 0;
+    padding: 6px 0;
+    font-size: 1rem;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid #e64944;
+    margin-right: 8px;
   }
