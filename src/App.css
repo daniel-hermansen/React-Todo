@@ -1,0 +1,66 @@
+body {
+  background-color: #063131;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+
+}
+
+.app {
+  font-family: sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h2 {
+    margin-bottom: 0px;
+}
+
+.header h4{
+    margin-top: 2.5%;
+    font-style: italic;
+}
+
+.main {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.todo-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+.task {
+    background-color: #9d03fc;
+    border: 2px solid #55008a;
+    width: 20%;
+    margin: 8px 0;
+    padding: 6px;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .task.completed {
+    background-color: #51abff;
+    border: 2px solid #55008a;
+    text-decoration: line-through;
+  }
+
+  form > Input {
+    background-color: #063131;
+    border: 0;
+    padding: 6px 0;
+    font-size: 1rem;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid #e64944;
+    margin-right: 8px;
+  }
