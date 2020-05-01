@@ -64,3 +64,29 @@ body {
     border-bottom: 1px solid #e64944;
     margin-right: 8px;
   }
+
+  .link{
+    text-decoration: none;
+  }
+  
+  .Nav{
+  margin: 0px;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  background-color: #9d03fc;
+  border-bottom: 2px solid #55008a;
+  }
+  
+  .Nav h2{
+    padding-top: .65%;
+    padding-bottom: .65%;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    color: white;
+    text-decoration: none;
+  }
+
+  .LoginPage {
+    text-align: center;
+  }
